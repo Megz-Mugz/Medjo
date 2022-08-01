@@ -1,0 +1,38 @@
+<%- include("header") -%>
+
+<h1 class="compose-header">Compose</h1>
+<form class="compose-form" action="/compose" method="post">
+
+  <div class="mb-3">
+    <label>Today's Date: </label>
+    <input type="date" name="sessionDate" value="">
+    <!-- <input type="text" class="form-control" name="postTitle" placeholder="Today's Date (Wednesday, July 16, 2011)"> -->
+  </div>
+
+  <div class="mb-3">
+    <label>Length of Session (minutes): </label>
+    <input type="number" name="minutes" value="">
+  </div>
+
+  <div class="mb-3">
+    <label>How Clear & Present Were You? </label>
+    <input type="range" name="awareness" value="50" min="1" max="100" oninput="this.nextElementSibling.value = this.value">
+    <output>50</output>
+  </div>
+
+  <div class="mb-3">
+    <label>How Difficult was this session?</label>
+    <input type="range" name="difficulty" value="50" min="1" max="100" oninput="this.nextElementSibling.value = this.value">
+    <output>50</output>
+  </div>
+
+  <div class="mb-3">
+    <p for="exampleInputPassword1" class="form-label">Additional Comments</p>
+    <textarea name="comments" rows="5" cols="150"></textarea>
+  </div>
+
+  <button type="submit" class="btn btn-dark">Submit Entry</button>
+</form>
+
+
+<%- include("footer") -%>

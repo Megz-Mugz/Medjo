@@ -1,0 +1,27 @@
+<%- include("header") -%>
+
+<h1 class="pastJournalsHeader">Total Meditation Sessions: <%= totalSessions %> </h1>
+
+<%  docs.forEach(function(post){ %>
+
+<div class="post-box">
+  <h1><%=post.date%></h1>
+
+  <p><b>Length of Session:</b> <%=post.minutes%> minutes</p>
+  <p><b>Awareness:</b>  <%=post.awareness%>/100</p>
+  <p><b>Difficulty:</b>  <%=post.difficulty%>/100</p>
+  <p><b>Additional Comments:</b> <%=post.comments%></p>
+
+  <form action="/delete" method="post">
+      <div class="item">
+        <input type="checkbox" name="checkbox" value="<%=post._id%>" onChange="this.form.submit()">
+        <label for="">Delete Post</label>
+      </div>
+    </form>
+
+</div>
+
+<% }) %>
+
+
+<%- include("footer") -%>

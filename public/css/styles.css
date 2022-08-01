@@ -1,0 +1,98 @@
+body {
+  background-color: #90C8AC;
+}
+
+.box {
+  max-width: 450px;
+  margin: 300px auto 40px;
+  background: #F5F0BB;
+  border-radius: 5px;
+  display: center;
+}
+
+.header-font {
+  font-size: 6rem;
+}
+
+#heading {
+  text-align: center;
+}
+
+.description {
+  max-width: 450px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.home-buttons {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.buttons {
+  margin: 20px;
+  max-width: 500px;
+}
+
+.footer {
+  text-align: center;
+  margin: 25px 30px;
+}
+
+.notice-name {
+  text-decoration: underline;
+}
+
+.post-box {
+  max-width: 450px;
+  margin: auto;
+  margin-top: 20px;
+  background: #F5F0BB;
+  border-radius: 10px;
+  display: center;
+  padding: 10px;
+}
+
+.pastJournalsHeader{
+  text-align: center;
+  margin-top: 20px;
+}
+
+.compose-form {
+  margin: 40px;
+}
+
+.compose-header {
+  margin: 2%;
+}
+
+.about-us-header{
+  margin-top: 20px;
+  text-align: center;
+  font-size: 5rem;
+}
+
+.mission {
+  margin-top: 20px;
+  text-align: center;
+  font-style: italic;
+}
+
+.aboutMe-image {
+  max-width: 400px;
+  margin-left: 55%;
+  margin-top: 40px;
+  background: black;
+}
+
+.founder-text {
+  margin-left: 50%;
+  margin-top: -350px;
+  font-size: 1.5rem;
+}
+
+.about {
+  text-align:center;
+}
