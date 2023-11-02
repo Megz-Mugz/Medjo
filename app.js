@@ -12,7 +12,7 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
-mongoose.connect("mongodb+srv://rohan-admin:bball123@cluster0.5rsvufi.mongodb.net/journalsDB", {useNewUrlParser: true});
+mongoose.connect("mongodb+srv://rohan-admin:go2password@cluster0.5rsvufi.mongodb.net/journalsDB", {useNewUrlParser: true});
 
 const sessionSchema = {
   date: String,
